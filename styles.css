@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    background-color: #221d30;
+    color: white;
+    align-items: flex-start;
+}
+
+.headercol1 {
+    flex-direction: column;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.productcard {
+    height: 20rem;
+    width: 20rem;
+    padding: 1rem;
+    display: flex;
+    word-wrap: break-word;
+    flex-direction: column-reverse;
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+}
+
+.infocard {
+    height: 30rem;
+    width: 50rem;
+    padding: 1rem;
+    display: flex;
+    word-wrap: break-word;
+    flex-direction: row;
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    gap: 2rem;
+}
+
+.pcol1{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    flex-grow: calc(49/3);
+    justify-content: space-between;
+}
+.pcol2{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    flex-grow: calc(49/3);
+    justify-content: space-between;
+}
+
+
+.productimg{
+    height: 7rem;
+    object-fit: cover;
+    align-self: center;
+}
+
+.infoimg{
+    height: 20rem;
+    object-fit: cover;
+    align-self: center;
+}
+
+.icol1{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    flex-grow: calc(19/2);
+    justify-content: flex-start;
+}
+.icol2{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    flex-grow: calc(19/2);
+    justify-content: flex-start;
+}
+.pcol3{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: 1;
+    flex-grow: calc(49/3);
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Roboto';
+}
+h2{
+    font-family: 'Roboto';
+}
+h3{
+    font-family: 'Roboto';
+}
+h4{
+    font-family: 'Roboto';
+}
+h5{
+    font-family: 'Roboto';
+}
+p{
+    font-family: 'Roboto';
+}
+.textprice{
+
+    font-weight: bold;
+    color: #51d422;
+}
+
+.itextprice{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #51d422;
+}
+
+.textcat{
+    font-weight: normal;
+    color: #6f6e70;
+}
