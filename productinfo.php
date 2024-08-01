@@ -13,11 +13,12 @@
 <body>
     <div class="header">
         <div class="headercol1">
-            <h1>Informacion</h1>
-            <p>Bienvenido, explora nuestros productos</p>
+        <h1 class="htitle">Krid's Music store</h1>
+        <p class="hsub">Información de producto</p>
 
         </div>
     </div>
+    
     <div class="container">
         <?php
         include './src/controllers/connection.php';
@@ -30,17 +31,25 @@
                     <img class="infoimg" src="data:image/png;base64,<?php echo base64_encode($r['imagen']); ?>" alt="" />
                 </div>
                 <div class="icol2">
-                    <h3><?php echo $r['nombre']; ?></h3>
-                    <p class="itextprice"><?php echo $r['precio']; ?></p>
-                    <p><?php echo $r['descripcion']; ?></p>
                     <h4 class="textcat"><?php echo $r['categoria']; ?></h4>
-                    <p>Marca</p>
-                    <p><?php echo $r['marca']; ?></p>
+                    <h3 class="textprod"><?php echo $r['nombre']; ?></h3>
+                    <p class="itextprice"><?php echo '$'.$r['precio']; ?></p>
+                    <p class="textinf"><?php echo $r['descripcion']; ?></p>
+                    <br>
+                    <p class="textsubinf">Marca</p>
+                    <p class="textinf"><?php echo $r['marca']; ?></p>
+                    <br>
+                    <p class="textsubinf">Existencias disponibles</p>
+                    <p class="textinf"><?php echo $r['stock']; ?></p>
                 </div>
                 <div class="icol3">
-                    <p>Existencias disponibles</p>
-                    <p><?php echo $r['stock']; ?></p>
-                    <button>Detalles</button>
+                    <form method="post"  action="./src/controllers/carritoAdd.php?producto=<?php echo $_GET['producto']; ?>">
+                        <p class="textsubinf">Cantidad a comprar:</p>
+                        <input type="number" name="cantidad">
+                        <input type="hidden" name="producto" value='<?php echo $_GET['producto']?>'>
+                        <br>
+                        <button type="submit">Añadir</button>
+                    </form>
                 </div>
             </div>
 

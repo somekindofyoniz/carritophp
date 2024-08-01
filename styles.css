@@ -11,21 +11,70 @@ body {
     background-color: #221d30;
     color: white;
     align-items: flex-start;
+    padding: 1rem;
+}
+
+.htitle{
+    color: white;
+    font-size: medium;
+    margin: 0;
+}
+
+.hsub{
+    color: white;
+    font-size: small;
+    margin: 0;
 }
 
 .headercol1 {
+    display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
+}
+.headercol2 {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 5rem;
 }
 
+.carritoCont{
+    display: none;
+    position: absolute;
+    background-color: red;
+    height: 5rem;
+    top: 4.15rem;
+}
 
 .container{
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    height: 100%;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     padding: 2rem;
 }
+
+.cardcol{
+    display: flex;
+    flex-direction: column;
+}
+
 .productcard {
     height: 20rem;
     width: 20rem;
@@ -41,6 +90,20 @@ body {
 
 .infocard {
     height: 30rem;
+    width: 50rem;
+    padding: 1rem;
+    display: flex;
+    word-wrap: break-word;
+    flex-direction: row;
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.14);
+    gap: 2rem;
+}
+
+.cartitem {
+    height: 6rem;
     width: 50rem;
     padding: 1rem;
     display: flex;
@@ -79,6 +142,12 @@ body {
 
 .infoimg{
     height: 20rem;
+    object-fit: cover;
+    align-self: center;
+}
+
+.cartimg{
+    height: 5rem;
     object-fit: cover;
     align-self: center;
 }
@@ -139,7 +208,45 @@ p{
     color: #51d422;
 }
 
+.carttextprice{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #51d422;
+}
+
 .textcat{
     font-weight: normal;
     color: #6f6e70;
+    margin: 0;
+}
+
+.textprod{
+    font-weight: bold;
+    color: #2e1554;
+    margin: 0;
+}
+
+.textsubinf{
+    font-weight: lighter;
+    color: #2e1554;
+    margin: 0;
+}
+
+.textinf{
+    font-weight: normal;
+    color: #35313b;
+    margin: 0;
+}
+
+.cart1{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart2{
+    display: flex;
+    flex: 1;
 }
